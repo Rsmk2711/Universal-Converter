@@ -115,6 +115,96 @@ const app = (() => {
             desc: 'Convert Binary, Decimal, Hex, Octal.',
             type: 'number-system',
             units: ['Decimal', 'Binary', 'Octal', 'Hexadecimal']
+        },
+        time: {
+            title: 'Time Converter',
+            icon: 'fa-clock',
+            desc: 'Convert seconds, minutes, hours, days.',
+            type: 'standard',
+            base: 's',
+            units: {
+                's': 1,
+                'min': 60,
+                'h': 3600,
+                'd': 86400,
+                'wk': 604800,
+                'mo (avg)': 2628000,
+                'y': 31536000
+            }
+        },
+        power: {
+            title: 'Power Converter',
+            icon: 'fa-plug',
+            desc: 'Convert Watts, Kilowatts, Horsepower.',
+            type: 'standard',
+            base: 'W',
+            units: {
+                'W': 1,
+                'kW': 1000,
+                'MW': 1000000,
+                'hp (mech)': 745.7,
+                'hp (elec)': 746
+            }
+        },
+        energy: {
+            title: 'Energy Converter',
+            icon: 'fa-bolt',
+            desc: 'Convert Joules, Calories, kWh.',
+            type: 'standard',
+            base: 'J',
+            units: {
+                'J': 1,
+                'kJ': 1000,
+                'cal': 4.184,
+                'kcal': 4184,
+                'Wh': 3600,
+                'kWh': 3600000,
+                'BTU': 1055.06
+            }
+        },
+        pressure: {
+            title: 'Pressure Converter',
+            icon: 'fa-gauge-high',
+            desc: 'Convert Pascal, Bar, PSI, Atm.',
+            type: 'standard',
+            base: 'Pa',
+            units: {
+                'Pa': 1,
+                'kPa': 1000,
+                'MPa': 1000000,
+                'bar': 100000,
+                'psi': 6894.76,
+                'atm': 101325,
+                'Torr': 133.322
+            }
+        },
+        force: {
+            title: 'Force Converter',
+            icon: 'fa-meteor',
+            desc: 'Convert Newtons, Dyne, Pound-force.',
+            type: 'standard',
+            base: 'N',
+            units: {
+                'N': 1,
+                'kN': 1000,
+                'dyne': 0.00001,
+                'lbf': 4.44822,
+                'kgf': 9.80665
+            }
+        },
+        angle: {
+            title: 'Angle Converter',
+            icon: 'fa-chart-pie',
+            desc: 'Convert Degrees, Radians, Gradians.',
+            type: 'standard',
+            base: 'deg',
+            units: {
+                'deg': 1,
+                'rad': 57.2958,
+                'grad': 0.9,
+                'arcmin': 0.016667,
+                'arcsec': 0.000278
+            }
         }
     };
 
